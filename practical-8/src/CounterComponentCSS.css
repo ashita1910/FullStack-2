@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+#counterp {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#counterDiv button {
+    margin: 5px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+#counterDiv {
+    text-align: center;
+}

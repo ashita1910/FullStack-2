@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+.showHidep {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#showHideContentp {
+    color: blue;
+    font-size: 18px;
+    text-align: justify;
+}
+
+#showHideh1 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#showHideDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#showHideDiv button {
+    margin: 5px;
+    font-size: 16px;
+    padding: 5px;
+}
