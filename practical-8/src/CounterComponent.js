@@ -31,20 +31,16 @@ class CounterComponent extends Component {
     }
 
     render() {
-        return ( <
-            >
-            <
-            h1 > Ques - 1 < /h1>  <
-            hr / >
-            <
-            p id = "counterp" > { this.state.counter } < /p>  <
-            div id = "counterDiv" >
-            <
-            button onClick = { this.increase } > INCREASE < /button>  <
-            button onClick = { this.reset } > RESET < /button>  <
-            button onClick = { this.decrease } > DECREASE < /button>  <
-            /div>  <
-            />
+        return ( <>
+            <h1 > Ques - 1 </h1>  
+            <hr / >
+            <p id = "counterp" > { this.state.counter } </p>  
+            <div id = "counterDiv" >
+            <button onClick = { this.increase } > INCREASE </button>  
+            <button onClick = { this.reset } > RESET </button>  
+            <button onClick = { this.decrease } > DECREASE </button>  
+            </div>  
+            </>
         );
     }
 }
