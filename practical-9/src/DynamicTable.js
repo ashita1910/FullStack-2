@@ -9,16 +9,16 @@ export default function DynamicTable() {
         {username:"user",password:"user",email:"user@gmail.com"}
     ]);
     const addUser = (e) => {
-        //e.preventDefault();
-        const userEl = {
+        e.preventDefault();
+        const userElement = {
             username: e.target.username.value,
             password: e.target.password.value,
             email: e.target.email.value
         };
-        setUser([...user, userEl]);
-        // e.target.username.value=""
-        // e.target.password.value=""
-        // e.target.email.value=""
+        setUser([...user, userElement]);
+        e.target.username.value=""
+        e.target.password.value=""
+        e.target.email.value=""
     }
     const displayUser = (user, index) => {
         return(
@@ -38,26 +38,26 @@ export default function DynamicTable() {
                 <div class="col-sm-3 my-1">
                     <div class="input-group">
                     <label for="inlineFormInputGroupUsername" class="mr-2 mt-1">UserName</label>
-                        <input type="text" class="form-control" id="inlineFormInputGroupUsername">
+                        <input type="text" class="form-control" id="username">
                         </input>
                     </div>
                 </div>
                 <div class="col-sm-3 my-1">
                     <div class="input-group">
                     <label for="inlineFormInputGroupPassword" class="mr-2 mt-1">Password</label>
-                        <input type="password" class="form-control" id="inlineFormInputGroupPassword">
+                        <input type="password" class="form-control" id="password">
                         </input>
                     </div>
                 </div>
                 <div class="col-sm-3 my-1">
                     <div class="input-group">
                     <label for="inlineFormInputGroupEmail" class="mr-2 mt-1">Email Id:</label>
-                        <input type="email" class="form-control" id="inlineFormInputGroupEmail">
+                        <input type="email" class="form-control" id="email">
                         </input>
                     </div>
                 </div>
                 <div class="col-auto my-1">
-                    <button type="submit" class={"btn btn-primary"}>Submit</button>
+                    <button type="submit" class="btn btn-primary">Add User</button>
                 </div>
             </div>
             </form>
