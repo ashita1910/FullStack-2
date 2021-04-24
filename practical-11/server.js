@@ -15,17 +15,14 @@ app.get('/about', (req, res) => {
 });
 app.get('/signin', (req, res) => {
     res.sendFile(__dirname + '/html/signin.html');
-    // if(req.query.username === "admin" && req.query.password === "123")
-    //     res.sendFile(__dirname + '/html/valid.html');
-    // else
-    //     res.sendFile(__dirname + '/html/valid.html');
+    auth(req, res);
 }); 
-app.get('/login', (req, res) => {
+function auth(req, res){
     if(req.query.username === "admin" && req.query.password === "123")
         res.sendFile(__dirname + '/html/valid.html');
     else
         res.sendFile(__dirname + '/html/invalid.html');
-});
+}
 app.use("*", function(req, res){
     res.status(404).sendFile(__dirname + '/html/404.html');
 });
